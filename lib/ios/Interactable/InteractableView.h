@@ -19,7 +19,7 @@
 @property (nonatomic, assign) BOOL verticalOnly;
 @property (nonatomic, assign) BOOL horizontalOnly;
 @property (nonatomic, assign) BOOL dragEnabled;
-@property (nonatomic, strong) RCTBridge *bridge;
+@property (nonatomic, weak) RCTBridge *bridge;
 @property (nonatomic, copy) NSArray<InteractablePoint *> *snapPoints;
 @property (nonatomic, copy) NSArray<InteractablePoint *> *springPoints;
 @property (nonatomic, copy) NSArray<InteractablePoint *> *gravityPoints;
